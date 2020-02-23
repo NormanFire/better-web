@@ -14,7 +14,7 @@ export default {
     deleteCache: '清除缓存'
   },
   login: {
-    title: 'FEBS 系统登录',
+    title: 'Better 系统登录',
     logIn: '立即登录',
     username: '账号',
     password: '密码',
@@ -183,7 +183,7 @@ export default {
       needLogin: '网关管理模块操作需要认证，',
       toLogin: '点击认证',
       tips: '该模块功能需要预先开启网关增强，开启方法请参考文档：',
-      title: 'FEBS 网关管理认证',
+      title: 'Better 网关管理认证',
       login: '认证'
     },
     refresh: '刷新',
@@ -213,7 +213,7 @@ export default {
     sidebarLogo: '侧边栏 Logo'
   },
   system: {
-    title: 'FEBS 权限系统'
+    title: 'Better 权限系统'
   },
   tips: {
     usernameShouldNotBeEmpty: '用户名不能为空',
@@ -238,7 +238,7 @@ export default {
     onlyChooseOne: '只能选择一个节点作为父节点',
     noNodeSelected: '请先选择节点',
     confirmDeleteNode: '选中节点及其子结点将被永久删除, 是否继续？',
-    iframeGrant: '用户名：FEBS 密码：123456',
+    iframeGrant: '用户名：Better 密码：123456',
     notEqual: '两次输入不一致',
     oldPasswordIncorrect: '原密码不正确',
     uploadSuccess: '上传成功',

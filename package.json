@@ -1,8 +1,8 @@
 {
-  "name": "febs-cloud-web",
+  "name": "better-upms-web",
   "version": "4.2.1",
-  "description": "febs cloud微服务权限系统前端",
-  "author": "MrBird",
+  "description": "better cloud微服务权限系统前端",
+  "author": "Better",
   "license": "Apache 2.0",
   "scripts": {
     "dev": "vue-cli-service serve --open",

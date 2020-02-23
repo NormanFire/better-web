@@ -14,7 +14,7 @@ export default {
     deleteCache: 'DeleteCache'
   },
   login: {
-    title: 'FEBS System Login',
+    title: 'Better UPMS Login',
     logIn: 'Login',
     username: 'Username',
     password: 'Password',
@@ -183,7 +183,7 @@ export default {
       needLogin: 'The operation of the gateway management module requires authentication, ',
       toLogin: ' Click to login',
       tips: 'The function of this module needs to be enhanced in advance. For the method of opening, please refer to the document: ',
-      title: 'FEBS Gateway Certification',
+      title: 'Better Gateway Certification',
       login: 'Login'
     },
     refresh: 'Refresh',
@@ -213,7 +213,7 @@ export default {
     sidebarLogo: 'Sidebar Logo'
   },
   system: {
-    title: 'FEBS System'
+    title: 'Better UPMS'
   },
   tips: {
     usernameShouldNotBeEmpty: 'Username can not be empty',
@@ -230,7 +230,7 @@ export default {
     confirmDelete: 'The selected data will be permanently deleted, continue?',
     confirmDeleteCache: 'Whether to clear the user permission cache immediately?',
     containCurrentUser: 'The operation has been canceled because it contains the currently logged in user',
-    neverLogin: 'Never logged in to the FEBS system',
+    neverLogin: 'Never logged in to the Better system',
     nothing: 'Nothing',
     topId: 'A value of 0 indicates a top-level node',
     choose: 'Select: ',
@@ -238,7 +238,7 @@ export default {
     onlyChooseOne: 'Only one node can be selected as the parent node',
     noNodeSelected: 'Please select a node first',
     confirmDeleteNode: 'The selected node and its child nodes will be permanently deleted. Continue?',
-    iframeGrant: 'Userame: FEBS Password: 123456',
+    iframeGrant: 'Userame: Better Password: 123456',
     notEqual: 'Inconsistent values entered twice',
     oldPasswordIncorrect: 'Old password incorrect',
     uploadSuccess: 'Upload Successfully',
