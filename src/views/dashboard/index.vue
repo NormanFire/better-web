@@ -58,7 +58,7 @@
           <div id="visit-count-chart" style="width: 100%;height: 20rem" />
         </div>
       </el-col>
-      <el-col :xs="24" :sm="12">
+      <!--<el-col :xs="24" :sm="12">
         <div class="app-container project-wrapper">
           <div class="project-header">
             <el-link type="primary" href="https://github.com/wuyouzhuguli?tab=repositories" target="_blank" style="float: right;">{{ $t('common.allProject') }}</el-link>
@@ -150,7 +150,7 @@
             </tr>
           </table>
         </div>
-      </el-col>
+      </el-col>-->
     </el-row>
   </div>
 </template>
