@@ -1,0 +1,25 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1582468328326'); /* IE9 */
+  src: url('iconfont.eot?t=1582468328326#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAARAAAsAAAAACMAAAAP0AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqFKIQgATYCJAMMCwgABCAFhG0HNxtnBxHVm6PJvjgwz2s6kdqiwsXFlxpz4/topEbSfY6H74/25973aqcNfBVsPIwCSmAbL9QEa3z7X+D9D9vsI8yxtsBFOxdVecLTi+gKgPrNX5zzwEZFqJGcPXn0hZRHaU4Hl9P/tj5Y6yzLaaxFY2wbEzDBgPbGNlmBxIFogB22i9icdC3+fJwAhjSZQrb+obGAw6BxAcSxqCAL8JoONoIFXMnsWVoBuYMUPIcYZwDc5PvjH6wDB0hSBdDUXb5fLng+w56ZoJ3/T5DKEeCvZ4GzChRgA1QQh17bHtA8uIGSjWTYeGIXBsFYy/P/v+TFCuZJf3gMEF1AsrFOXIQSvDHKIsDbRCd1fBndBYbAE0DTVDNVH37FWDLolpgCrthCI6oUue9a8DLVeMk61Wvxu675D1PkqlOyS1aAWEW0khDPnbt2bdaNN+eKhnjt3u1qAjMxW+jEvxa/4oo6RZHXEtRofheYM1McbXSnJDRNLN0pFAntlgox5WocR3321qtOIoJ3LHDWLEJErNwp3Fn18ynyUPDkbyfrV6/Ta2INr0KkulYbsJeuBOy0onl4RefK7au7VsllW2WxMHY1LeLFxolmkfFUFz+HXlopnkXxU2giTtTp/NWEeMr5QAOD8ckPRMc6IgV99lW0xzGf2oqw0jg9Fv48d/EqgaeY4G+aXzrv0M+TRNRUoMpbudR5SeHdLknrBjcfVjTXDc00qvktH+Cz8b6jUbp2do6hqrS5r2CiiBcRvjqMhLIPPQ1XI3Yih7OT5sylU3wXCyINItJ0H/2OsmqpX3XxwqyZxMTSYmLfyM5dogab9/er2q/vyh9hc21epYLTiWnJaWDv5NSzLFky16r7EbtB0KBdTzVlnIxkyW11/dZu6WypfTbvbvzMNN4t4U6eRKIjI4grDZA2angQ8F2FQl0YJ8AFEnH+OAedGA+ZAGjQU6gnQIseQpk/wmfgMX22KUPJ9SsuhwHg1bj2hXQ0GMAN+rfJHuC184ENNRYifakhj/LSSDEA+E3l6BxXdAejTNxTV8zBGKEgSkjSNKDA6aGVaAodcmyhC+cBQyYCVo9wVQMKqTIAVvo0QLCsBwZF+wHFchbFiHdBCuktMLECBVnxCHdLOfrh+cORUDBqkH/waugNMfIhy7yhfSdBVaGkvpCy90BdVM3IFXukNWbkj22YDRgaOrhop2FKA4w0BFRcOOaxLUvT96RCDd3sAEdCwahB/sGroTe8PR9ar7+hfSdBIyUj9hdS9p1DXVQA9CrrQSXPck7+2IbZgKGhg4tmwYSDA4z9gwIqLpyCf2xLo5WByor9Fd315X+EZdGeKMJAUASDddk/T2mthe/EbAY=') format('woff2'),
+  url('iconfont.woff?t=1582468328326') format('woff'),
+  url('iconfont.ttf?t=1582468328326') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1582468328326#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mysql:before {
+  content: "\e604";
+}
+
+.icon-daima:before {
+  content: "\e62b";
+}
+

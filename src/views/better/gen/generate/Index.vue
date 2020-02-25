@@ -84,7 +84,7 @@ export default {
       })
     },
     gen(row) {
-      this.$download('upms/generator', {
+      this.$download('gen/gen', {
         name: row.name,
         remark: row.remark
       }, `${row.name}_code.zip`)
@@ -97,7 +97,7 @@ export default {
       this.loading = true
       params.pageSize = this.pagination.size
       params.pageNum = this.pagination.num
-      this.$get('upms/generator/tables', { ...params }).then((r) => {
+      this.$get('gen/gen/tables', { ...params }).then((r) => {
         const data = r.data.data
         this.total = data.total
         this.list = data.rows

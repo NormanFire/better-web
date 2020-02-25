@@ -1,0 +1,23 @@
+{
+  "id": "1652888",
+  "name": "better-cloud-web",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "11597561",
+      "name": "mysql",
+      "font_class": "mysql",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "12299320",
+      "name": "代码",
+      "font_class": "daima",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    }
+  ]
+}

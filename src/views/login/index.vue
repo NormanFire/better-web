@@ -183,6 +183,13 @@ $cursor: #fff;
   line-height: 30px;
   height: 30px;
 }
+.el-form-item__error{
+  padding-top: 0!important;
+  margin-left: 10px;
+}
+.el-form-item.is-required:not(.is-no-asterisk)>.el-form-item__label:before, .el-form-item.is-required:not(.is-no-asterisk) .el-form-item__label-wrap>.el-form-item__label:before {
+  display: none;
+}
 </style>
 
 <style lang="scss" scoped>
@@ -241,6 +248,6 @@ $light_gray:#eee;
 }
 
 .el-form-item{
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 </style>

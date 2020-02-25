@@ -3,6 +3,10 @@ import Vue from 'vue'
 import 'normalize.css/normalize.css' // a modern alternative to CSS resets
 import Element from 'element-ui'
 import './styles/element-variables.scss'
+import './assets/icon/iconfont.css'
+import 'xe-utils'
+import VXETable from 'vxe-table'
+import 'vxe-table/lib/index.css'
 
 import '@/styles/index.scss' // global css
 
@@ -23,15 +27,13 @@ const Plugins = [
   hasNoPermission,
   hasAnyPermission
 ]
-
+Vue.use(VXETable)
 Plugins.map((plugin) => {
   Vue.use(plugin)
 })
-
 Vue.use(Element, {
   i18n: (key, value) => i18n.t(key, value)
 })
-
 Vue.prototype.$post = request.post
 Vue.prototype.$get = request.get
 Vue.prototype.$put = request.put
@@ -44,8 +46,38 @@ Vue.prototype.$login = request.login
 Object.keys(filters).forEach(key => {
   Vue.filter(key, filters[key])
 })
-
 Vue.config.productionTip = false
+
+VXETable.setup({
+  // 默认表格参数
+  border: true,
+  resizable: true,
+  showHeaderOverflow: true,
+  showOverflow: true,
+  highlightCurrentRow: true,
+  highlightHoverRow: true,
+  size: 'mini',
+  align: 'left',
+  stripe: false,
+
+  // 默认 tooltip 主题样式
+  tooltip: {
+    trigger: 'hover',
+    theme: 'light'
+  },
+  // 默认分页参数
+  pager: {
+    pageSize: 10,
+    pagerCount: 12,
+    pageSizes: [10, 15, 20, 50, 100],
+    layouts: ['PrevJump', 'PrevPage', 'Jump', 'PageCount', 'NextPage', 'NextJump', 'Sizes', 'Total'] // 非常灵活的分页布局，支持任意位置随意换
+  },
+  // 默认工具栏参数
+  toolbar: {
+    refresh: false,
+    loading:false,
+  }
+})
 
 new Vue({
   el: '#app',

@@ -113,7 +113,7 @@ export default {
       }
     },
     getConfig() {
-      this.$get('upms/generatorConfig').then((r) => {
+      this.$get('gen/genConfig').then((r) => {
         const data = r.data.data
         this.config = { ...data }
       })
@@ -122,7 +122,7 @@ export default {
       this.$refs.form.validate((valid) => {
         if (valid) {
           this.buttonLoading = true
-          this.$post('upms/generatorConfig', { ...this.config }).then(() => {
+          this.$post('gen/genConfig', { ...this.config }).then(() => {
             this.buttonLoading = false
             this.$message({
               message: this.$t('tips.updateSuccess'),
