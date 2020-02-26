@@ -25,12 +25,12 @@
           <el-dropdown-item>
             <span style="display:block;" @click="setting">{{ $t('navbar.setting') }}</span>
           </el-dropdown-item>
-          <a target="_blank" href="https://github.com/wuyouzhuguli/FEBS-Cloud">
+          <a target="_blank" href="https://gitee.com/treeshade/better-cloud">
             <el-dropdown-item>
               {{ $t('navbar.github') }}
             </el-dropdown-item>
           </a>
-          <a target="_blank" href="https://www.kancloud.cn/mrbird/spring-cloud/1263679">
+          <a target="_blank" href="https://gitee.com/treeshade/better-cloud/blob/master/doc/%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3.md">
             <el-dropdown-item>{{ $t('navbar.docs') }}</el-dropdown-item>
           </a>
           <el-dropdown-item divided>
