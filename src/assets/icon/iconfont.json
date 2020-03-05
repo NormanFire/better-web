@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "4337008",
+      "name": "加",
+      "font_class": "jia",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
       "icon_id": "11597561",
       "name": "mysql",
       "font_class": "mysql",

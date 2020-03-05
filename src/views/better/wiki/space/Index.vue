@@ -1,5 +1,6 @@
 <template>
-  <div class="app-container">
+  <split></split>
+<!--  <div class="app-container">
     <vxe-grid v-show="spaceShow" :toolbar="{loading:false,size:'small'}" :columns="spaceColumns" :pager-config="spacePageConfig" :data="spaceTableData" :auto-resize="true">
       <template v-slot:buttons>
         <el-button @click="insertSpaceDialogVisible = true">新增</el-button>
@@ -35,15 +36,17 @@
       </span>
     </el-dialog>
 
-  </div>
+  </div>-->
 </template>
 
 <script>
+  import Split from "../../../../components/Split/Split";
   import SpaceView from './components/SpaceView'
   export default {
     name:'Space',
     components:{
       SpaceView,
+      Split
     },
     data(){
       return {
