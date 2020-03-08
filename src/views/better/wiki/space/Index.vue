@@ -1,13 +1,12 @@
 <template>
-  <split></split>
-<!--  <div class="app-container">
+  <div class="app-container">
     <vxe-grid v-show="spaceShow" :toolbar="{loading:false,size:'small'}" :columns="spaceColumns" :pager-config="spacePageConfig" :data="spaceTableData" :auto-resize="true">
       <template v-slot:buttons>
         <el-button @click="insertSpaceDialogVisible = true">新增</el-button>
       </template>
     </vxe-grid>
 
-    <space-view @return="handleSpaceViewReturn" :space="currentSpace" :show="spaceViewShow" v-if="spaceViewShow"/>
+    <transition><space-view :tree-data="documentTreeData" @return="handleSpaceViewReturn" :space="currentSpace" :show="spaceViewShow" v-if="spaceViewShow"/></transition>
 
     <el-dialog
       title="新增空间"
@@ -36,7 +35,7 @@
       </span>
     </el-dialog>
 
-  </div>-->
+  </div>
 </template>
 
 <script>
@@ -57,7 +56,7 @@
             slots:{
               default: ({row}) => {
                 return [
-                  <span onClick={()=>{this.currentSpace = row,this.spaceShow = false,this.spaceViewShow = true}} class="space-name-cell"  title="进入空间">{row.name}</span>
+                  <span onClick={()=>{this.getDocumentTree(row);this.currentSpace = row}} class="space-name-cell"  title="进入空间">{row.name}</span>
               ]
               }
             }
@@ -70,6 +69,7 @@
           {title:'导出', field:'isExport',},
           {title:'操作', },
         ],
+        documentTreeData:[],
         currentSpace:{},
         spaceShow:true,
         spaceViewShow:false,
@@ -122,6 +122,13 @@
       },
       deleteSpace(){
 
+      },
+      getDocumentTree(row){
+        this.$get(`wiki/document/space/${row.spaceId}`).then(res=>{
+          this.documentTreeData  =  res.data.data
+          this.spaceShow = false
+          this.spaceViewShow = true
+        })
       },
     },
   }
